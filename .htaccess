@@ -1,0 +1,12 @@
+AuthType Basic
+AuthName "Access to /Dev/TheGateEdinburgh"
+AuthUserFile /kunden/homepages/17/d419939659/htpasswd
+Require user Customer
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /TheGateEdinburgh/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /TheGateEdinburgh/index.php [L]

@@ -1,0 +1,196 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+@import url(../warp/css/responsive.css);
+
+
+/* Breakpoints
+----------------------------------------------------------------------------------------------------*/
+
+/* All except large Screens */
+@media (max-width: 1220px) {
+
+}
+
+/* Only Phones and Tablets (Portrait) */
+@media (max-width: 959px) {
+
+}
+
+/* Only Tablets (Portrait) */
+@media (min-width: 768px) and (max-width: 959px) {
+
+}
+
+/* Only Tablets (Portrait) and Phones (Landscape) */
+@media (min-width: 480px) and (max-width: 959px) {
+
+	/* Layout */
+	#search { display: none; }
+
+}
+
+/* Only Phones */
+@media (max-width: 767px) {
+
+	/* Layout */
+	#toolbar,
+	#headerbar,
+	#menubar,
+	#breadcrumbs,
+	#totop-scroller { display: none; }
+
+}
+
+/* Only Phones (Landscape) */
+@media (min-width: 480px) and (max-width: 767px) {
+
+}
+
+/* Only Phones (Portrait) */
+@media (max-width: 479px) {
+	
+	/* Show the logo above the navigation on mobile */
+	#mobile-logo{
+		display:block;
+		width:117px;
+		margin:0 auto;
+	}
+	
+	/* sort out the Nav Bar for Mobile */
+	.navbar{
+		margin:0 auto;
+		padding:0;
+		width:90%;
+	}
+
+	/* Sort out the column widths for responsive */
+	.col-sm-2, .col-sm-10{
+		width:100%;
+	}
+	#top_logo{
+		display:none;
+	}
+	
+	/* sort out the styling for the sidebars */
+	#sidebar, #sidebar2, #sidebar3 {
+	    padding-left: 10px;
+	    padding-right: 10px;
+		text-align:center;
+	}
+	/* hide various elements */
+	#main_slider, #secondary_slider, #twitter_img {
+		display:none;
+	}
+
+	/* Sort out the Twitter stuff for mobile */
+	#twitter_feed{
+		max-height:none;
+	}
+	#twitter_col1, #twitter_col2, #twitter_col3{
+		float:none;
+		width:100%;
+		max-width:100%;
+		text-align:center;
+	}
+	#twitter_col2 #twitter_txt{
+		margin:0 auto;
+		float:none;
+	}
+	
+	/* Sort out the 3 buttons for mobile */
+	#books_col1, #books_col2, #books_col3{
+		float:none;
+		margin: 0 auto;
+	}
+	#books_col1 .books_txt, #books_col2 .books_txt, #books_col3 .books_txt{
+		margin-top:0px;
+		padding-top:60px;
+	}
+	
+	/* Sort out the latest News section */
+	#news_img, #news_txt{
+		float:none;
+		margin:0 auto;
+	}
+	
+	/* Sort out the Final Piece of content at the bottom */
+	#video, #interactive{
+		float:none !important;
+		margin:0 auto;
+	}
+	
+	/* Sort out the footer fro mobile */
+	footer{
+		margin-bottom:20px;
+	}
+	#footer_left, #footer_nav{
+		display:none;
+	}
+	#footer_right{
+		float:none;
+		width:100%;
+	}
+	#footer_top_bar{
+		background: url(../../images/footer_top_bar.jpg) repeat;
+    	height: auto;
+    	max-width: 800px;
+    	width: 100%;
+		text-align:center;
+		padding-bottom:10px;
+	}
+	#footer_top_bar .social_icon{
+		float:none;
+		margin-left: 0px;
+	}
+	#footer_top_bar .social_icon a{
+		padding: 0 10px;
+	}
+	#copyright{
+		padding:0;
+		padding-top:10px;
+		background-color:#FFF;
+		font-family:"raleway", sans-serif;
+		font-weight:500;
+		font-size:0.750em;
+	}
+	.copyright-txt{
+		float:none;
+		padding:0 25px;
+		text-align:center;
+	}
+	.nl-mobile{
+		float:none;
+		text-align:center;
+	}
+	.mobile-hide{
+		display:none;
+	}
+	#copyright .nl-mobile a{
+		color:#000;
+		text-decoration:none;
+	}
+	#copyright .nl-mobile a.active, #copyright .nl-mobile a:hover{
+		color:#c4148b;
+	}
+
+	/* System */
+	#system .items .item,
+	#system .items .item:first-child {
+		margin-top: 12px;
+		padding-top: 18px;
+		border-top-width: 1px;
+	}
+
+	#system .items :first-child .item:first-child {
+		margin-top: 0;
+		padding-top: 0;
+		border-width: 0;
+	}
+
+	#system .items .leading .item {
+		margin-bottom: 0;
+		padding-bottom: 0;
+		border-width: 0;
+	}
+
+}
